@@ -796,6 +796,69 @@ h2 {
   line-height: 1.85;
 }
 
+.sila-gallery {
+  margin: 0 0 22px;
+}
+
+.sila-gallery-frame {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(212, 175, 55, 0.42);
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, rgba(69, 10, 10, 0.12), rgba(212, 175, 55, 0.12)),
+    #fffaf2;
+  box-shadow: 0 18px 38px rgba(69, 10, 10, 0.12);
+}
+
+.sila-gallery-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgba(69, 10, 10, 0.38));
+  pointer-events: none;
+}
+
+.sila-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 220ms ease, transform 520ms ease;
+}
+
+.sila-gallery img.is-changing {
+  opacity: 0;
+  transform: scale(1.04);
+}
+
+.sila-gallery figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 800;
+  line-height: 1.55;
+}
+
+.gallery-dots {
+  display: flex;
+  gap: 7px;
+  margin-top: 10px;
+}
+
+.gallery-dots span {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(127, 29, 29, 0.22);
+  transition: width 240ms ease, background 240ms ease;
+}
+
+.gallery-dots span.is-active {
+  width: 24px;
+  background: var(--gold);
+}
+
 .sila-panel strong {
   color: var(--red-900);
 }
@@ -885,11 +948,25 @@ h2 {
   .site-nav {
     align-items: flex-start;
     border-radius: 28px;
+    top: 10px;
+    width: min(100% - 20px, 680px);
+    padding: 8px 10px;
+  }
+
+  .brand-mark {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-brand {
+    font-size: 0.9rem;
   }
 
   .nav-toggle {
     display: block;
     flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
   }
 
   .nav-links {
@@ -920,22 +997,57 @@ h2 {
     grid-template-columns: 1fr;
   }
 
+  .section {
+    min-height: auto;
+    padding-top: 82px;
+    padding-bottom: 76px;
+  }
+
+  .hero {
+    min-height: 100svh;
+  }
+
+  h1 {
+    font-size: clamp(2.1rem, 10vw, 4.6rem);
+    letter-spacing: -0.045em;
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 8vw, 3.2rem);
+  }
+
   .hero-content {
-    padding-bottom: 98px;
+    padding: 24px 10px 86px;
+  }
+
+  .intro {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .identity-card span {
+    padding: 13px 12px;
+    font-size: 0.82rem;
+  }
+
+  .section-heading {
+    margin-bottom: 28px;
   }
 
   .team-stage {
-    min-height: 680px;
+    min-height: 590px;
+    border-radius: 30px;
   }
 
   .members-grid {
     grid-template-columns: repeat(5, minmax(74px, 1fr));
     gap: 4px;
-    padding: 330px 12px 58px;
+    padding: 292px 10px 52px;
   }
 
   .member img {
-    height: 150px;
+    height: 132px;
+    border-radius: 28% 28% 20px 20px;
   }
 
   .member-name {
@@ -947,7 +1059,27 @@ h2 {
   }
 
   .team-stage.has-active .member.is-active {
-    transform: scale(1.1) translateY(-8px);
+    transform: scale(1.04) translateY(-6px);
+  }
+
+  .team-detail {
+    top: 34px;
+    width: min(430px, calc(100% - 48px));
+  }
+
+  .team-detail h3 {
+    font-size: clamp(1.38rem, 6vw, 2.2rem);
+  }
+
+  .team-detail p {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .detail-absen {
+    margin-bottom: 9px !important;
+    padding: 6px 10px;
+    font-size: 0.72rem !important;
   }
 
   .mobile-hint {
@@ -956,27 +1088,93 @@ h2 {
 
   .garuda-app {
     min-height: auto;
+    gap: 12px;
+    border-radius: 30px;
   }
 
   .garuda-stage {
-    min-height: 560px;
+    min-height: 430px;
+  }
+
+  .garuda-button {
+    width: min(400px, 84vw);
   }
 
   .shield-hotspots {
-    width: min(190px, 50vw);
+    width: min(158px, 42vw);
     left: 57%;
     top: 59%;
   }
 
   .sila-symbol img {
-    width: 54px;
-    height: 54px;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+  }
+
+  .sila-symbol:hover,
+  .sila-symbol.is-active {
+    transform: translate(-50%, -50%) scale(1.03);
+  }
+
+  .shield-hotspots.has-selected .sila-symbol.is-active {
+    transform: translate(-50%, -50%) scale(1.12);
+  }
+
+  .sila-panel {
+    min-height: auto;
+    padding: 20px;
+    border-radius: 26px;
+  }
+
+  .sila-panel h3 {
+    font-size: clamp(1.35rem, 6.5vw, 2.2rem);
+  }
+
+  .sila-panel p {
+    font-size: 0.92rem;
+    line-height: 1.68;
+  }
+
+  .sila-gallery {
+    margin-bottom: 16px;
+  }
+
+  .sila-gallery-frame {
+    border-radius: 20px;
+  }
+
+  .sila-gallery figcaption {
+    font-size: 0.78rem;
+  }
+
+  .progress-dots {
+    right: 28px;
+    bottom: 18px;
   }
 }
 
 @media (max-width: 560px) {
   .section {
     padding-inline: 14px;
+    padding-top: 74px;
+    padding-bottom: 64px;
+  }
+
+  .hero-photo img {
+    object-position: center;
+  }
+
+  .hero-actions {
+    gap: 8px;
+    margin-top: 22px;
+  }
+
+  .primary-link,
+  .secondary-link {
+    min-height: 42px;
+    padding-inline: 14px;
+    font-size: 0.86rem;
   }
 
   .identity-card {
@@ -984,28 +1182,43 @@ h2 {
   }
 
   .identity-card span {
-    padding: 14px;
+    padding: 11px;
   }
 
   .team-stage {
-    min-height: 630px;
+    min-height: 540px;
   }
 
   .team-detail {
-    top: 34px;
-    left: 24px;
+    top: 28px;
+    left: 20px;
+    width: min(340px, calc(100% - 40px));
+  }
+
+  .team-stage.layout-left .team-detail {
+    right: 20px;
+  }
+
+  .team-detail h3 {
+    font-size: clamp(1.22rem, 6.2vw, 1.75rem);
+    letter-spacing: -0.035em;
   }
 
   .members-grid {
-    padding-top: 345px;
+    padding-top: 284px;
+    padding-bottom: 50px;
   }
 
   .member img {
-    height: 120px;
+    height: 96px;
+  }
+
+  .member-name {
+    font-size: 0.68rem;
   }
 
   .garuda-button {
-    width: min(390px, 98vw);
+    width: min(330px, 86vw);
   }
 
   .garuda-app {
@@ -1013,26 +1226,31 @@ h2 {
   }
 
   .garuda-stage {
-    min-height: 460px;
+    min-height: 360px;
+  }
+
+  .garuda-help {
+    bottom: 16px;
+    font-size: 0.66rem;
+  }
+
+  .shield-hotspots {
+    width: min(132px, 39vw);
+    top: 58%;
   }
 
   .sila-symbol {
-    width: 48px;
+    width: 38px;
   }
 
   .sila-symbol img {
-    width: 46px;
-    height: 46px;
-    border-radius: 14px;
-  }
-
-  .sila-symbol span {
-    font-size: 0.54rem;
-    padding-inline: 5px;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
   }
 
   .sila-panel {
-    min-height: auto;
+    padding: 18px;
   }
 }
 
