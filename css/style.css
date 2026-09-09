@@ -479,6 +479,7 @@ h2 {
   font-size: clamp(1.55rem, 3.8vw, 2.85rem);
   letter-spacing: -0.04em;
   white-space: nowrap;
+  text-shadow: 0 8px 22px rgba(0, 0, 0, 0.34);
 }
 
 .team-detail p {
@@ -541,6 +542,7 @@ h2 {
   font-weight: 900;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  text-shadow: 0 5px 14px rgba(69, 10, 10, 0.18);
 }
 
 .member small {
