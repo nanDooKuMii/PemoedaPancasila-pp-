@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tugas Penerapan Nilai-Nilai Pancasila</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-nav" id="siteNav">
+    <a class="nav-brand" href="#pembuka" aria-label="Kembali ke pembuka">
+      <span class="brand-mark">P</span>
+      <span>Pancasila</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+      <a href="#pembuka">Pembuka</a>
+      <a href="#biodata">Biodata</a>
+      <a href="#pembahasan">Pancasila</a>
+      <a href="#penutup">Penutup</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="pembuka" class="section hero reveal">
+      <div class="hero-photo" aria-label="Foto kelompok">
+        <img src="assets/images/foto/kelompok.jpeg" alt="Foto kelompok beranggotakan Nando, Mirza, Rizki, Odit, dan Refita" />
+      </div>
+
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Kelompok Pancasila</p>
+        <h1>Tugas Penerapan Nilai-Nilai Pancasila</h1>
+        <div class="identity-card">
+          <span><strong>Mata Pelajaran</strong> Pendidikan Pancasila</span>
+          <span><strong>Kelas</strong> Isi sesuai kelas</span>
+          <span><strong>Nama Kelompok</strong> Kelompok Pancasila</span>
+          <span><strong>Tanggal</strong> Isi sesuai tanggal</span>
+        </div>
+        <p class="intro">
+          Website ini dibuat untuk menjelaskan penerapan nilai-nilai Pancasila dalam kehidupan sehari-hari. Melalui tampilan interaktif, setiap sila dibahas dengan contoh nyata agar lebih mudah dipahami dan diterapkan. Tugas ini juga menjadi bentuk kerja sama kelompok dalam memahami dasar negara Indonesia.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-link" href="#pembahasan">Lihat Pembahasan</a>
+          <a class="secondary-link" href="#biodata">Kenali Kelompok</a>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#biodata" aria-label="Scroll ke bagian biodata">
+        <span>Scroll ke bawah</span>
+        <i></i>
+      </a>
+    </section>
+
+    <section id="biodata" class="section team-section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Anggota Kelompok</p>
+        <h2>Biodata Kelompok</h2>
+        <p>Sentuh atau arahkan kursor ke foto untuk melihat biodata anggota secara penuh.</p>
+      </div>
+
+      <div class="team-stage" id="teamStage">
+        <div class="team-bg" id="teamBg"></div>
+        <div class="team-detail" id="teamDetail" aria-live="polite">
+          <span class="detail-role">Desain Visual</span>
+          <h3>Nando</h3>
+          <p>Mengatur tampilan visual dan membantu penyajian tugas agar lebih menarik.</p>
+        </div>
+
+        <div class="members-grid" id="membersGrid">
+          <button class="member" type="button" data-name="Nando" data-role="Desain Visual" data-motto="Tampilan yang baik membantu pesan tersampaikan jelas." data-img="assets/images/foto/nando.jpeg" data-layout="right">
+            <img src="assets/images/foto/nando.jpeg" alt="Foto Nando" />
+            <span class="member-name">Nando</span>
+            <small>Desain Visual</small>
+          </button>
+          <button class="member" type="button" data-name="Mirza" data-role="Ketua Kelompok" data-motto="Memimpin alur kerja kelompok dan memastikan setiap bagian tugas tersusun rapi." data-img="assets/images/foto/mirza.jpeg" data-layout="right">
+            <img src="assets/images/foto/mirza.jpeg" alt="Foto Mirza" />
+            <span class="member-name">Mirza</span>
+            <small>Ketua Kelompok</small>
+          </button>
+          <button class="member" type="button" data-name="Rizki" data-role="Penasihat &amp; Pembantu" data-motto="Memberi masukan dan membantu kelompok menyelesaikan tugas dengan baik." data-img="assets/images/foto/rizki.jpeg" data-layout="right">
+            <img src="assets/images/foto/rizki.jpeg" alt="Foto Rizki" />
+            <span class="member-name">Rizki</span>
+            <small>Penasihat & Pembantu</small>
+          </button>
+          <button class="member" type="button" data-name="Odit" data-role="Si Serba Bisa" data-motto="Siap membantu berbagai kebutuhan kelompok dari awal sampai akhir." data-img="assets/images/foto/odit.jpeg" data-layout="center">
+            <img src="assets/images/foto/odit.jpeg" alt="Foto Odit" />
+            <span class="member-name">Odit</span>
+            <small>Si Serba Bisa</small>
+          </button>
+          <button class="member" type="button" data-name="Refita" data-role="Dokumentasi &amp; Pembantu" data-motto="Mendokumentasikan proses dan membantu penyusunan tugas kelompok." data-img="assets/images/foto/refita.jpeg" data-layout="left">
+            <img src="assets/images/foto/refita.jpeg" alt="Foto Refita" />
+            <span class="member-name">Refita</span>
+            <small>Dokumentasi & Pembantu</small>
+          </button>
+        </div>
+        <p class="mobile-hint">Tap untuk melihat</p>
+      </div>
+    </section>
+
+    <section id="pembahasan" class="section pancasila-section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Pembahasan</p>
+        <h2>Garuda Interaktif</h2>
+        <p>Klik gambar Garuda untuk menyorot perisai, lalu pilih lambang sila langsung di atas Garuda.</p>
+      </div>
+
+      <div class="garuda-app" id="garudaApp">
+        <div class="garuda-stage">
+          <button class="garuda-button" id="garudaButton" type="button" aria-label="Sorot perisai Garuda">
+            <img src="assets/images/foto/logo garuda.webp" alt="Gambar Garuda" />
+          </button>
+          <div class="shield-hotspots" id="silaOrbit" aria-label="Lambang sila pada perisai Garuda">
+            <button class="sila-symbol sila-1" type="button" data-sila="1" aria-label="Buka pembahasan sila pertama">
+              <img src="assets/images/foto/sila 1.png" alt="Lambang sila pertama bintang" />
+              <span>Sila 1</span>
+            </button>
+            <button class="sila-symbol sila-2" type="button" data-sila="2" aria-label="Buka pembahasan sila kedua">
+              <img src="assets/images/foto/sila 2.png" alt="Lambang sila kedua rantai" />
+              <span>Sila 2</span>
+            </button>
+            <button class="sila-symbol sila-3" type="button" data-sila="3" aria-label="Buka pembahasan sila ketiga">
+              <img src="assets/images/foto/sila 3.webp" alt="Lambang sila ketiga pohon beringin" />
+              <span>Sila 3</span>
+            </button>
+            <button class="sila-symbol sila-4" type="button" data-sila="4" aria-label="Buka pembahasan sila keempat">
+              <img src="assets/images/foto/sila 4.png" alt="Lambang sila keempat kepala banteng" />
+              <span>Sila 4</span>
+            </button>
+            <button class="sila-symbol sila-5" type="button" data-sila="5" aria-label="Buka pembahasan sila kelima">
+              <img src="assets/images/foto/sila 5.webp" alt="Lambang sila kelima padi dan kapas" />
+              <span>Sila 5</span>
+            </button>
+          </div>
+          <p class="garuda-help">Klik Garuda untuk fokus ke perisai</p>
+        </div>
+
+        <article class="sila-panel" id="silaPanel">
+          <p class="panel-kicker" id="panelKicker">Mode Garuda</p>
+          <h3 id="panelTitle">Perisai Pancasila</h3>
+          <div id="panelBody">
+            <p>Klik gambar Garuda untuk menampilkan fokus perisai. Setelah itu, pilih salah satu lambang sila untuk membuka pembahasan dan contoh penerapannya.</p>
+          </div>
+          <button class="back-shield" id="backShield" type="button">Kembali ke Garuda</button>
+        </article>
+
+        <div class="progress-dots" id="progressDots" aria-label="Indikator sila aktif">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="penutup" class="section closing-section reveal">
+      <div class="closing-card">
+        <p class="eyebrow">Penutup</p>
+        <h2>Kesimpulan</h2>
+        <p>
+          Pancasila bukan hanya dasar negara, tetapi juga pedoman sikap dalam kehidupan sehari-hari. Dengan menerapkan nilai ketuhanan, kemanusiaan, persatuan, musyawarah, dan keadilan sosial, masyarakat dapat hidup lebih rukun, adil, dan bertanggung jawab.
+        </p>
+        <div class="closing-members">
+          <strong>Kelompok Pancasila</strong>
+          <span>Nando</span>
+          <span>Mirza</span>
+          <span>Rizki</span>
+          <span>Odit</span>
+          <span>Refita</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

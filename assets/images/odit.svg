@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="oditAura" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#7c2d12" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="suitOdit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="50%" stop-color="#0f2744"/>
+      <stop offset="100%" stop-color="#081426"/>
+    </linearGradient>
+    <filter id="shadowOdit" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="15" stdDeviation="15" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="200" cy="180" r="170" fill="url(#oditAura)"/>
+
+  <g filter="url(#shadowOdit)">
+    <!-- Neck -->
+    <rect x="180" y="210" width="40" height="60" rx="8" fill="#fed7aa"/>
+    <!-- Head Base -->
+    <ellipse cx="200" cy="160" rx="58" ry="68" fill="#fed7aa"/>
+    
+    <!-- Ears -->
+    <ellipse cx="140" cy="162" rx="10" ry="16" fill="#fed7aa"/>
+    <ellipse cx="260" cy="162" rx="10" ry="16" fill="#fed7aa"/>
+
+    <!-- Hair (Neat structured hair) -->
+    <path d="M138 152 Q136 68 200 60 Q264 68 262 152 Q235 105 198 108 Q160 105 138 152 Z" fill="#18181b"/>
+    <path d="M152 82 Q195 64 240 85 Q210 75 168 76 Z" fill="#27272a"/>
+
+    <!-- Eyebrows and Determined Eyes -->
+    <path d="M158 144 Q175 140 188 144" stroke="#18181b" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M212 144 Q225 140 242 144" stroke="#18181b" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <circle cx="173" cy="157" r="5" fill="#18181b"/>
+    <circle cx="227" cy="157" r="5" fill="#18181b"/>
+    <circle cx="175" cy="155" r="1.5" fill="#ffffff"/>
+    <circle cx="229" cy="155" r="1.5" fill="#ffffff"/>
+
+    <!-- Nose & Smile -->
+    <path d="M200 160 L195 180 L205 180" stroke="#f97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M185 198 Q200 208 215 198" stroke="#991b1b" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Analytic / Executive Suit -->
+    <path d="M85 500 L85 340 Q85 250 160 250 L240 250 Q315 250 315 340 L315 500 Z" fill="url(#suitOdit)"/>
+    
+    <!-- Inner Shirt & Gold Badge -->
+    <polygon points="200,360 160,250 240,250" fill="#f8fafc"/>
+    <polygon points="160,250 185,300 200,270 190,250" fill="#cbd5e1"/>
+    <polygon points="240,250 215,300 200,270 210,250" fill="#cbd5e1"/>
+    
+    <path d="M194 280 L206 280 L210 400 L200 420 L190 400 Z" fill="#d97706"/>
+    
+    <!-- Shield / Scale of Justice Pin -->
+    <circle cx="130" cy="320" r="13" fill="#0f2744" stroke="#f59e0b" stroke-width="2"/>
+    <path d="M125 315 L135 315 M130 315 L130 326 M123 322 L127 322 M133 322 L137 322" stroke="#fbbf24" stroke-width="1.8"/>
+  </g>
+</svg>

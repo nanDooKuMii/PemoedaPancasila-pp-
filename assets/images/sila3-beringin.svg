@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgWhite3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="greenFoliage" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="50%" stop-color="#166534"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+    <linearGradient id="trunkBrown" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="50%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+    <filter id="treeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background Shield Section: White (Putih) -->
+  <rect width="200" height="200" rx="24" fill="url(#bgWhite3)"/>
+  <rect width="192" height="192" x="4" y="4" rx="20" fill="none" stroke="#d4af37" stroke-width="1.5" stroke-opacity="0.5"/>
+
+  <!-- Banyan Tree (Pohon Beringin) -->
+  <g transform="translate(100, 105)" filter="url(#treeShadow)">
+    <!-- Root Base -->
+    <path d="M-45 65 Q-20 50 -10 30 L10 30 Q20 50 45 65 Q0 55 -45 65 Z" fill="url(#trunkBrown)"/>
+    <path d="M-30 65 Q-15 45 -5 20 L5 20 Q15 45 30 65 Z" fill="#78350f"/>
+
+    <!-- Strong Trunk & Branches -->
+    <path d="M-12 35 L-15 0 Q-30 -20 -40 -30 L-32 -32 Q-20 -15 -10 -5 L-6 -30 L6 -30 L10 -5 Q20 -15 32 -32 L40 -30 Q30 -20 15 0 L12 35 Z" fill="url(#trunkBrown)"/>
+    
+    <!-- Hanging Aerial Roots (Akar Gantung) -->
+    <path d="M-38 -10 L-38 30 M-26 -5 L-26 35 M26 -5 L26 35 M38 -10 L38 30" stroke="#78350f" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Lush Foliage Canopies (Canopy Layers) -->
+    <!-- Back darker layer -->
+    <path d="M-60 -20 C-75 -35 -65 -65 -45 -70 C-35 -85 0 -90 15 -80 C35 -90 65 -75 60 -50 C75 -35 65 5 45 5 C30 15 -30 15 -45 5 C-65 5 -75 -10 -60 -20 Z" fill="#14532d"/>
+    
+    <!-- Front highlighted foliage clumps -->
+    <path d="M-55 -25 C-68 -40 -50 -65 -30 -62 C-20 -75 10 -78 25 -68 C45 -75 65 -55 52 -35 C62 -20 50 0 35 -2 C20 8 -20 8 -35 -2 C-55 2 -62 -12 -55 -25 Z" fill="url(#greenFoliage)"/>
+    
+    <!-- Top rounded cloud clusters -->
+    <circle cx="-35" cy="-45" r="18" fill="#15803d" opacity="0.6"/>
+    <circle cx="0" cy="-60" r="22" fill="#16a34a" opacity="0.7"/>
+    <circle cx="35" cy="-45" r="18" fill="#15803d" opacity="0.6"/>
+    <circle cx="-18" cy="-30" r="15" fill="#22c55e" opacity="0.5"/>
+    <circle cx="18" cy="-30" r="15" fill="#22c55e" opacity="0.5"/>
+  </g>
+</svg>

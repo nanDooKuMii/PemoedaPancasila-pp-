@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <radialGradient id="starGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#eab308" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldStar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="30%" stop-color="#fef08a"/>
+      <stop offset="70%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </linearGradient>
+    <linearGradient id="goldStarDark" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#713f12"/>
+    </linearGradient>
+    <filter id="glow1" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Shield Section: Black (Hitam) with subtle radial luster -->
+  <rect width="200" height="200" rx="24" fill="#0f0f11"/>
+  <rect width="192" height="192" x="4" y="4" rx="20" fill="none" stroke="#d4af37" stroke-width="1.5" stroke-opacity="0.4"/>
+  <circle cx="100" cy="100" r="70" fill="url(#starGlow)"/>
+
+  <!-- Five Pointed Star with 3D Facets (Bintang Emas) -->
+  <g transform="translate(100, 100)" filter="url(#glow1)">
+    <!-- 5 Facet Rays (Light side) -->
+    <!-- Top point -->
+    <polygon points="0,0 0,-62 18,-18" fill="url(#goldStar)"/>
+    <polygon points="0,0 0,-62 -18,-18" fill="url(#goldStarDark)"/>
+    <!-- Top-Right point -->
+    <polygon points="0,0 58,-19 23,10" fill="url(#goldStar)"/>
+    <polygon points="0,0 58,-19 18,-18" fill="url(#goldStarDark)"/>
+    <!-- Bottom-Right point -->
+    <polygon points="0,0 36,50 0,22" fill="url(#goldStar)"/>
+    <polygon points="0,0 36,50 23,10" fill="url(#goldStarDark)"/>
+    <!-- Bottom-Left point -->
+    <polygon points="0,0 -36,50 -23,10" fill="url(#goldStar)"/>
+    <polygon points="0,0 -36,50 0,22" fill="url(#goldStarDark)"/>
+    <!-- Top-Left point -->
+    <polygon points="0,0 -58,-19 -18,-18" fill="url(#goldStar)"/>
+    <polygon points="0,0 -58,-19 -23,10" fill="url(#goldStarDark)"/>
+    
+    <!-- Central Jewel Center -->
+    <circle cx="0" cy="0" r="4.5" fill="#ffffff"/>
+  </g>
+</svg>
