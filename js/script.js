@@ -40,6 +40,7 @@ function activateMember(member) {
   teamStage.classList.remove("layout-left", "layout-right", "layout-center");
   teamStage.classList.add("has-active", `layout-${member.dataset.layout || "center"}`);
   teamBg.style.backgroundImage = `url("${member.dataset.img}")`;
+  teamBg.style.backgroundPosition = member.dataset.bgPosition || "";
   teamDetail.innerHTML = `
     <span class="detail-role">${member.dataset.role}</span>
     <h3>${member.dataset.name}</h3>
@@ -50,6 +51,7 @@ function activateMember(member) {
 
 function resetMembers() {
   teamStage.classList.remove("has-active", "layout-left", "layout-right", "layout-center");
+  teamBg.style.backgroundPosition = "";
   members.forEach((member) => member.classList.remove("is-active"));
 }
 
