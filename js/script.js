@@ -13,9 +13,9 @@ const silaContent = {
     pembahasan: "Sila ini mengandung nilai religius yang menjadi landasan spiritual bangsa. Maknanya adalah pengakuan terhadap Tuhan sebagai pencipta alam semesta, sekaligus menjamin kebebasan setiap warga negara untuk memeluk agama dan beribadah sesuai keyakinannya tanpa adanya paksaan.",
     contoh: "Menjaga toleransi dengan tidak mengganggu ibadah pemeluk agama lain, serta berteman dengan siapa saja tanpa menjadikan perbedaan keyakinan sebagai sebuah halangan.",
     images: [
-      { src: "assets/images/foto/sila 1.png", caption: "Dummy gambar penerapan Sila Ke-1" },
-      { src: "assets/images/foto/kelompok.jpeg", caption: "Dummy dokumentasi diskusi kelompok" },
-      { src: "assets/images/foto/logo garuda.webp", caption: "Dummy ilustrasi nilai ketuhanan dalam Pancasila" }
+      { src: "assets/images/penerapan_sila/sila 1 baca.jpg", caption: "Membaca sebagai bentuk mendekatkan diri dan menambah ilmu" },
+      { src: "assets/images/penerapan_sila/sila 1 mendekatkan diri .jpg", caption: "Mendekatkan diri kepada Tuhan Yang Maha Esa" },
+      { src: "assets/images/penerapan_sila/sila 1 solat.jpg", caption: "Melaksanakan ibadah sesuai keyakinan" }
     ]
   },
   2: {
@@ -23,9 +23,9 @@ const silaContent = {
     pembahasan: "Mengedepankan prinsip kesetaraan, hak asasi, dan martabat manusia secara adil. Sila ini menolak segala bentuk penindasan, kekerasan, maupun diskriminasi, serta mendorong sikap saling menyayangi antarsesama manusia.",
     contoh: "Berani membela kebenaran saat melihat orang lain yang mengalami perundungan (bullying), dan selalu memperlakukan setiap orang dengan sopan santun tanpa memandang latar belakang ekonomi atau status sosialnya.",
     images: [
-      { src: "assets/images/foto/sila 2.png", caption: "Dummy gambar penerapan Sila Ke-2" },
-      { src: "assets/images/foto/mirza.jpeg", caption: "Dummy suasana kerja sama dan saling menghargai" },
-      { src: "assets/images/foto/refita.jpeg", caption: "Dummy dokumentasi kegiatan kelompok" }
+      { src: "assets/images/penerapan_sila/sila 2 bantu part 1.jpg", caption: "Membantu sesama sebagai wujud kemanusiaan" },
+      { src: "assets/images/penerapan_sila/sila 2 bantu part 3.jpg", caption: "Peduli kepada orang lain tanpa membeda-bedakan" },
+      { src: "assets/images/penerapan_sila/sila 2 hormat lebih tua.jpg", caption: "Menghormati orang yang lebih tua" }
     ]
   },
   3: {
@@ -33,9 +33,9 @@ const silaContent = {
     pembahasan: "Fokus pada rasa nasionalisme, cinta tanah air, dan menjaga keutuhan negara di tengah keberagaman suku, ras, dan budaya. Kepentingan bangsa dan negara harus diletakkan di atas kepentingan pribadi maupun golongan.",
     contoh: "Berpartisipasi aktif dalam kegiatan gotong royong warga, mempelajari kesenian daerah, serta bangga menggunakan produk-produk buatan dalam negeri untuk memajukan ekonomi lokal.",
     images: [
-      { src: "assets/images/foto/sila 3.webp", caption: "Dummy gambar penerapan Sila Ke-3" },
-      { src: "assets/images/foto/kelompok.jpeg", caption: "Dummy kebersamaan kelompok" },
-      { src: "assets/images/foto/odit.jpeg", caption: "Dummy semangat gotong royong" }
+      { src: "assets/images/penerapan_sila/sila 3 gotongry.jpg", caption: "Gotong royong untuk menjaga persatuan" },
+      { src: "assets/images/penerapan_sila/sila 3 kebersamaan.jpg", caption: "Kebersamaan dalam keberagaman" },
+      { src: "assets/images/penerapan_sila/sila 3 upacara .jpg", caption: "Mengikuti upacara sebagai bentuk cinta tanah air" }
     ]
   },
   4: {
@@ -43,9 +43,9 @@ const silaContent = {
     pembahasan: "Mengandung prinsip demokrasi kerakyatan. Sila ini menekankan bahwa pengambilan keputusan untuk kepentingan bersama harus selalu mengutamakan proses musyawarah guna mencapai mufakat, dengan dilandasi akal sehat.",
     contoh: "Menghargai perbedaan pendapat saat berdiskusi, tidak memaksakan kehendak pribadi kepada anggota forum, dan melaksanakan hasil keputusan bersama dengan lapang dada meskipun awalnya pendapat kita tidak diterima.",
     images: [
-      { src: "assets/images/foto/sila 4.png", caption: "Dummy gambar penerapan Sila Ke-4" },
-      { src: "assets/images/foto/nando.jpeg", caption: "Dummy proses musyawarah kelompok" },
-      { src: "assets/images/foto/rizki.jpeg", caption: "Dummy penyampaian pendapat dalam diskusi" }
+      { src: "assets/images/penerapan_sila/sila 4 kerkom.jpg", caption: "Kerja kelompok dengan saling mendengarkan pendapat" },
+      { src: "assets/images/penerapan_sila/sila 4 musyawarah.jpg", caption: "Musyawarah untuk mencapai mufakat" },
+      { src: "assets/images/penerapan_sila/sila 4 pilketos.jpg", caption: "Pemilihan ketua OSIS sebagai contoh demokrasi" }
     ]
   },
   5: {
@@ -53,9 +53,9 @@ const silaContent = {
     pembahasan: "Bertujuan mewujudkan kesejahteraan yang merata dan keadilan dalam segala aspek kehidupan bagi seluruh rakyat Indonesia. Sila ini juga menekankan keseimbangan antara hak dan kewajiban setiap individu di masyarakat.",
     contoh: "Tidak memonopoli atau merusak fasilitas umum yang menjadi hak bersama, membagi beban kerja secara proporsional dalam sebuah tim, serta menghindari gaya hidup boros yang berlebihan.",
     images: [
-      { src: "assets/images/foto/sila 5.webp", caption: "Dummy gambar penerapan Sila Ke-5" },
-      { src: "assets/images/foto/kelompok.jpeg", caption: "Dummy pembagian tugas kelompok secara adil" },
-      { src: "assets/images/foto/refita.jpeg", caption: "Dummy keseimbangan hak dan kewajiban" }
+      { src: "assets/images/penerapan_sila/sila 5 menabung.jpg", caption: "Menabung sebagai bentuk hidup hemat dan bertanggung jawab" },
+      { src: "assets/images/penerapan_sila/sila 5 menyisihkan.jpg", caption: "Menyisihkan sebagian rezeki untuk kebaikan bersama" },
+      { src: "assets/images/penerapan_sila/sila ke 5 menghargai karya.jpg", caption: "Menghargai karya orang lain sebagai bentuk keadilan sosial" }
     ]
   }
 };
