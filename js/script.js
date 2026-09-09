@@ -43,6 +43,7 @@ function activateMember(member) {
   teamDetail.innerHTML = `
     <span class="detail-role">${member.dataset.role}</span>
     <h3>${member.dataset.name}</h3>
+    <p class="detail-absen">Absen ${member.dataset.absen}</p>
     <p>${member.dataset.motto}</p>
   `;
 }

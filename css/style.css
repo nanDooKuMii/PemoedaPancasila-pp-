@@ -429,7 +429,7 @@ h2 {
   position: absolute;
   top: 54px;
   left: clamp(28px, 6vw, 72px);
-  z-index: 4;
+  z-index: 8;
   width: min(430px, calc(100% - 56px));
   color: white;
   opacity: 0;
@@ -442,6 +442,10 @@ h2 {
   right: clamp(28px, 6vw, 72px);
   left: auto;
   text-align: right;
+}
+
+.team-stage.layout-left .team-detail h3 {
+  margin-left: auto;
 }
 
 .team-stage.layout-right .team-detail,
@@ -471,7 +475,10 @@ h2 {
 
 .team-detail h3 {
   margin: 16px 0 10px;
-  font-size: clamp(2.7rem, 8vw, 5.2rem);
+  max-width: min(560px, 100%);
+  font-size: clamp(1.55rem, 3.8vw, 2.85rem);
+  letter-spacing: -0.04em;
+  white-space: nowrap;
 }
 
 .team-detail p {
@@ -480,9 +487,23 @@ h2 {
   line-height: 1.7;
 }
 
+.detail-absen {
+  display: inline-flex;
+  margin: 0 0 12px !important;
+  padding: 7px 12px;
+  border: 1px solid rgba(254, 240, 138, 0.36);
+  border-radius: 999px;
+  color: var(--gold-soft);
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 0.82rem !important;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .members-grid {
   position: relative;
-  z-index: 5;
+  z-index: 6;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: end;
@@ -535,7 +556,8 @@ h2 {
 
 .team-stage.has-active .member.is-active {
   color: white;
-  transform: scale(1.2) translateY(-14px);
+  z-index: 1;
+  transform: scale(1.12) translateY(-10px);
 }
 
 .team-stage.has-active .member.is-active small {
@@ -716,7 +738,7 @@ h2 {
 
 .sila-symbol:hover,
 .sila-symbol.is-active {
-  transform: translate(-50%, -50%) scale(1.18);
+  transform: translate(-50%, -50%) scale(1.08);
   filter: drop-shadow(0 20px 34px rgba(185, 28, 28, 0.28));
 }
 
@@ -732,7 +754,7 @@ h2 {
 
 .shield-hotspots.has-selected .sila-symbol.is-active {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1.36);
+  transform: translate(-50%, -50%) scale(1.18);
 }
 
 .sila-panel {
